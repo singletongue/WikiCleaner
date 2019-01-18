@@ -65,6 +65,7 @@ $ zcat enwiki-20180903-cirrussearch-content.json.gz|python clean.py - - enwiki-2
 ```
 
 If you're processing an non-English version of Wikipedia, it is required to specify alias names for `File` (namsespace: 6) and `Category` (namespace: 14) in Wikipedia so that links to files and categories are correctly recognized.
-    ```
-    $ zcat jawiki-20180903-cirrussearch-content.json.gz|python clean.py - - jawiki-20180903-articles.pickle --ns6 ファイル 画像 --ns14 カテゴリ > jawiki-20180903-clean.json
-    ```
+
+```
+$ zcat jawiki-20180903-cirrussearch-content.json.gz|python clean.py - - jawiki-20180903-articles.pickle --ns6 ファイル 画像 --ns14 カテゴリ > jawiki-20180903-clean.json
+```
